@@ -15,27 +15,19 @@
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
     <style>
-      /* #card{
-          border: 1px solid black;
-          border-radius: 10px;
-          text-align: center;
-          padding: 5px;
-          background-color: lightgray;
-      }
-      #card-img{
-        width: 250px;
-        height:200px;
-      } */
-      .row {
+      #meals {
         display: grid;
         grid-template-columns: auto auto auto auto;
         grid-gap: 15px;
         padding: 10px;
         text-align: center;
       }
-      .row img {
+      #meals img {
         width: 250px;
         height: 200px;
+      }
+      #mealDetails img {
+        width: 400px;
       }
     </style>
   </head>
@@ -85,10 +77,9 @@
             id="input-text"
             placeholder="Search For Meal ..."
           />
-          <!-- <input type="text" placeholder="Enter the city" class="input_text">
-            <input type="submit" value="Submit" class="submit"> -->
+
           <div class="input-group-append">
-            <button type="button" class="btn btn-danger" id="search" onclick="">
+            <button type="button" class="btn btn-danger" id="search">
               Search
             </button>
             <!-- <input type="submit" value="Submit" class="submit" /> -->
@@ -96,15 +87,8 @@
         </div>
       </form>
 
-      <div class="row" id="rows">
-        <!-- <div class="col" id="card">
-          <img src="" alt="" id="card-img" />
-          <h5 id="card-title"></h5>
-        </div>
-        <div class="col"></div>
-        <div class="col"></div>
-        <div class="col"></div> -->
-      </div>
+      <div id="mealDetails"></div>
+      <div id="meals"></div>
     </div>
 
     <script type="text/javascript" src="app.js"></script>
